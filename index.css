@@ -1,0 +1,28 @@
+img {
+    height: 100px;
+}
+#div1 {
+    height: 400px;
+}
+#arrow1 {
+    margin-left: 750px;
+    transform: rotate(-30deg);
+}
+#arrow2 {
+    margin-left: 650px;
+    transform: rotate(-90deg);
+}
+#arrow3 {
+
+    transform: rotate(30deg);
+}
+#arrow4 {
+ margin-left: 700px;  
+ rotate: 190deg;
+}
+#arrow5 {
+    rotate: 170deg;
+}
+#arrow6 {
+    rotate: 90deg;
+}
