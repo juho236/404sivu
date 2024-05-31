@@ -20,10 +20,13 @@
         <source src="Silly cat video audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    <div class="content">
+    <div id="content" class="content">
         <h1>404 - Sivua ei löytynyt</h1>
         <p>Tätät sivua ei löytynyt womp womp</p>
-        <button onclick="window.location.href='index.html'">Takaisin sinne mistä tulitkin</button>
+        <button onclick="hauskaa()">Takaisin sinne mistä tulitkin</button>
+    </div>
+    <div id="content2" class="content" style="opacity: 0;">
+        <h1>Et voi paeta kissavideota :)</h1>
     </div>
     <script>
         // JavaScript to handle sequential audio playback
@@ -33,6 +36,12 @@
         audio1.onended = function() {
             audio2.play();
         };
+
+        function hauskaa() {
+            document.body.requestFullscreen();
+            document.getElementById("content2").style.opacity = 1;
+            document.getElementById("content").style.opacity = 0;
+        }
     </script>
 </body>
 </html>
